@@ -97,6 +97,7 @@
         kotlin-language-server.enable = true;
         ltex.enable = true;
         lua-ls.enable = true;
+        marksman.enable = true;
         metals.enable = true;
         nil_ls.enable = true;
         nixd.enable = true;
