@@ -104,12 +104,13 @@ in {
         # inherit customRC;
         plugins = normalizedPlugins;
 
+	extraPython3Packages = extraPythonPackages; 
         # Python 3 environment
-        python3Env = let
-          python = config.python.package;
-          inherit (config.python) extraPythonPackages;
-        in
-          python.withPackages extraPythonPackages;
+        # python3Env = let
+        #   python = config.python.package;
+        #   inherit (config.python) extraPythonPackages;
+        # in
+        #   python.withPackages extraPythonPackages;
       }
       # Necessary to make sure the runtime path is set properly in NixOS 22.05,
       # or more generally before the commit:
