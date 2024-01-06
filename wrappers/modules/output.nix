@@ -104,7 +104,7 @@ in {
         # inherit customRC;
         plugins = normalizedPlugins;
 
-	extraPython3Packages = extraPythonPackages; 
+	extraPython3Packages = config.python.extraPythonPackages; 
         # Python 3 environment
         # python3Env = let
         #   python = config.python.package;
